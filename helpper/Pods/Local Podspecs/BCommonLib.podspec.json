@@ -1,0 +1,138 @@
+{
+  "name": "BCommonLib",
+  "version": "0.24",
+  "summary": "for baboy use.",
+  "homepage": "http://github.com/baboy/BCommonLib",
+  "authors": {
+    "baboy": "baboyzyh@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/baboy/BCommonLib.git",
+    "tag": "0.24"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "BCommonLib/Classes/*.{h,m}",
+  "frameworks": [
+    "UIKit",
+    "QuartzCore",
+    "CFNetwork",
+    "AVFoundation",
+    "CoreFoundation",
+    "CoreGraphics",
+    "Security",
+    "AudioToolbox",
+    "MediaPlayer",
+    "MobileCoreServices",
+    "SystemConfiguration",
+    "CoreMedia",
+    "Mapkit",
+    "CoreLocation",
+    "MessageUI",
+    "ImageIO"
+  ],
+  "libraries": [
+    "sqlite3.0",
+    "xml2",
+    "icucore",
+    "z"
+  ],
+  "subspecs": [
+    {
+      "name": "app",
+      "resources": [
+        "BCommonLib/Classes/app/default.api.plist",
+        "BCommonLib/Classes/app/default.conf.plist"
+      ],
+      "source_files": "BCommonLib/Classes/app"
+    },
+    {
+      "name": "modules",
+      "source_files": "BCommonLib/Classes/modules",
+      "subspecs": [
+        {
+          "name": "AFNetworking",
+          "source_files": "BCommonLib/Classes/modules/AFNetworking"
+        },
+        {
+          "name": "share",
+          "source_files": "BCommonLib/Classes/modules/share"
+        },
+        {
+          "name": "sliding menu",
+          "source_files": "BCommonLib/Classes/modules/sliding menu"
+        },
+        {
+          "name": "tracker",
+          "source_files": "BCommonLib/Classes/modules/tracker"
+        }
+      ]
+    },
+    {
+      "name": "model",
+      "source_files": "BCommonLib/Classes/model",
+      "subspecs": [
+        {
+          "name": "member",
+          "source_files": "BCommonLib/Classes/model/member"
+        },
+        {
+          "name": "app",
+          "source_files": "BCommonLib/Classes/model/app"
+        }
+      ]
+    },
+    {
+      "name": "common",
+      "subspecs": [
+        {
+          "name": "categories",
+          "source_files": "BCommonLib/Classes/common/categories"
+        },
+        {
+          "name": "dao",
+          "resources": "BCommonLib/Classes/common/dao/db.plist",
+          "source_files": "BCommonLib/Classes/common/dao"
+        },
+        {
+          "name": "controller",
+          "source_files": "BCommonLib/Classes/common/controller"
+        },
+        {
+          "name": "ext",
+          "source_files": "BCommonLib/Classes/common/ext"
+        },
+        {
+          "name": "map",
+          "source_files": "BCommonLib/Classes/common/map"
+        },
+        {
+          "name": "network",
+          "source_files": "BCommonLib/Classes/common/network"
+        },
+        {
+          "name": "ui",
+          "source_files": "BCommonLib/Classes/common/ui"
+        },
+        {
+          "name": "utils",
+          "source_files": "BCommonLib/Classes/common/utils"
+        },
+        {
+          "name": "theme",
+          "resources": [
+            "BCommonLib/Classes/common/theme/default.string.plist",
+            "BCommonLib/Classes/common/theme/default.theme.plist"
+          ],
+          "source_files": "BCommonLib/Classes/common/theme"
+        },
+        {
+          "name": "web",
+          "source_files": "BCommonLib/Classes/common/web"
+        }
+      ]
+    }
+  ]
+}

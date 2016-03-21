@@ -1,0 +1,96 @@
+PODS:
+  - AFNetworking (3.0.4):
+    - AFNetworking/NSURLSession (= 3.0.4)
+    - AFNetworking/Reachability (= 3.0.4)
+    - AFNetworking/Security (= 3.0.4)
+    - AFNetworking/Serialization (= 3.0.4)
+    - AFNetworking/UIKit (= 3.0.4)
+  - AFNetworking/NSURLSession (3.0.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.0.4)
+  - AFNetworking/Security (3.0.4)
+  - AFNetworking/Serialization (3.0.4)
+  - AFNetworking/UIKit (3.0.4):
+    - AFNetworking/NSURLSession
+  - BCommonLib (0.24):
+    - BCommonLib/app (= 0.24)
+    - BCommonLib/common (= 0.24)
+    - BCommonLib/model (= 0.24)
+    - BCommonLib/modules (= 0.24)
+  - BCommonLib/app (0.24)
+  - BCommonLib/common (0.24):
+    - BCommonLib/common/categories (= 0.24)
+    - BCommonLib/common/controller (= 0.24)
+    - BCommonLib/common/dao (= 0.24)
+    - BCommonLib/common/ext (= 0.24)
+    - BCommonLib/common/map (= 0.24)
+    - BCommonLib/common/network (= 0.24)
+    - BCommonLib/common/theme (= 0.24)
+    - BCommonLib/common/ui (= 0.24)
+    - BCommonLib/common/utils (= 0.24)
+    - BCommonLib/common/web (= 0.24)
+  - BCommonLib/common/categories (0.24)
+  - BCommonLib/common/controller (0.24)
+  - BCommonLib/common/dao (0.24)
+  - BCommonLib/common/ext (0.24)
+  - BCommonLib/common/map (0.24)
+  - BCommonLib/common/network (0.24)
+  - BCommonLib/common/theme (0.24)
+  - BCommonLib/common/ui (0.24)
+  - BCommonLib/common/utils (0.24)
+  - BCommonLib/common/web (0.24)
+  - BCommonLib/model (0.24):
+    - BCommonLib/model/app (= 0.24)
+    - BCommonLib/model/member (= 0.24)
+  - BCommonLib/model/app (0.24)
+  - BCommonLib/model/member (0.24)
+  - BCommonLib/modules (0.24):
+    - BCommonLib/modules/AFNetworking (= 0.24)
+    - BCommonLib/modules/share (= 0.24)
+    - BCommonLib/modules/sliding menu (= 0.24)
+    - BCommonLib/modules/tracker (= 0.24)
+  - BCommonLib/modules/AFNetworking (0.24)
+  - BCommonLib/modules/share (0.24)
+  - BCommonLib/modules/sliding menu (0.24)
+  - BCommonLib/modules/tracker (0.24)
+  - FMDB (2.6):
+    - FMDB/standard (= 2.6)
+  - FMDB/standard (2.6)
+  - IQKeyboardManager (3.2.1.2)
+  - OpenUDID (1.0.0)
+  - Reachability (3.2)
+  - RegexKitLite (4.0)
+  - UMengAnalytics-NO-IDFA (3.6.7)
+
+DEPENDENCIES:
+  - AFNetworking
+  - BCommonLib (from `https://github.com/baboy/BCommonLib.git`)
+  - FMDB
+  - IQKeyboardManager (~> 3.2.1.2)
+  - OpenUDID
+  - Reachability
+  - RegexKitLite
+  - UMengAnalytics-NO-IDFA
+
+EXTERNAL SOURCES:
+  BCommonLib:
+    :git: https://github.com/baboy/BCommonLib.git
+
+CHECKOUT OPTIONS:
+  BCommonLib:
+    :commit: 5096d68028767ff9798a601c5cdec3d4bddeac39
+    :git: https://github.com/baboy/BCommonLib.git
+
+SPEC CHECKSUMS:
+  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  BCommonLib: f8ccd0ce8eee2d37882c146d37e4350408bddbc9
+  FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
+  IQKeyboardManager: 4adcd7cc9c17440a7cb74755f6f6c8389919c6bf
+  OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
+  UMengAnalytics-NO-IDFA: 6d02561a00579b2e37718f204eb81347df5d7b8b
+
+COCOAPODS: 0.38.2
