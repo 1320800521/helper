@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		848F4CEC3040E40874C6512F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D56B6F79195F4F273537727 /* libPods.a */; };
 		8B6ACA1E1C9FC41500CC052A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6ACA1D1C9FC41500CC052A /* main.m */; };
 		8B6ACA211C9FC41500CC052A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6ACA201C9FC41500CC052A /* AppDelegate.m */; };
 		8B6ACA241C9FC41500CC052A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6ACA231C9FC41500CC052A /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		531B38AFFEBA8AEB083F1C64 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		892EBA172E5594F7A6E78D9F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8B6ACA191C9FC41500CC052A /* helpper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helpper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6ACA1D1C9FC41500CC052A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B6ACA1F1C9FC41500CC052A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		8B6ACA3D1C9FC41500CC052A /* helpperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helpperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6ACA411C9FC41500CC052A /* helpperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = helpperUITests.m; sourceTree = "<group>"; };
 		8B6ACA431C9FC41500CC052A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D56B6F79195F4F273537727 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848F4CEC3040E40874C6512F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		863E1F639CBF0C36A358426C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				892EBA172E5594F7A6E78D9F /* Pods.debug.xcconfig */,
+				531B38AFFEBA8AEB083F1C64 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8B6ACA101C9FC41500CC052A = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +99,8 @@
 				8B6ACA351C9FC41500CC052A /* helpperTests */,
 				8B6ACA401C9FC41500CC052A /* helpperUITests */,
 				8B6ACA1A1C9FC41500CC052A /* Products */,
+				863E1F639CBF0C36A358426C /* Pods */,
+				E64F5E5685A7065426D206D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +156,14 @@
 			path = helpperUITests;
 			sourceTree = "<group>";
 		};
+		E64F5E5685A7065426D206D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D56B6F79195F4F273537727 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B6ACA461C9FC41500CC052A /* Build configuration list for PBXNativeTarget "helpper" */;
 			buildPhases = (
+				FFBF9914524629CEEFE8A2AE /* Check Pods Manifest.lock */,
 				8B6ACA151C9FC41500CC052A /* Sources */,
 				8B6ACA161C9FC41500CC052A /* Frameworks */,
 				8B6ACA171C9FC41500CC052A /* Resources */,
+				B3C20B9F069AF7867E309837 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +290,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B3C20B9F069AF7867E309837 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFBF9914524629CEEFE8A2AE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8B6ACA151C9FC41500CC052A /* Sources */ = {
@@ -411,6 +470,7 @@
 		};
 		8B6ACA471C9FC41500CC052A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 892EBA172E5594F7A6E78D9F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = helpper/Info.plist;
@@ -422,6 +482,7 @@
 		};
 		8B6ACA481C9FC41500CC052A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 531B38AFFEBA8AEB083F1C64 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = helpper/Info.plist;
@@ -498,6 +559,7 @@
 				8B6ACA481C9FC41500CC052A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B6ACA491C9FC41500CC052A /* Build configuration list for PBXNativeTarget "helpperTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +568,7 @@
 				8B6ACA4B1C9FC41500CC052A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B6ACA4C1C9FC41500CC052A /* Build configuration list for PBXNativeTarget "helpperUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +577,7 @@
 				8B6ACA4E1C9FC41500CC052A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
