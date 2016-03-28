@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "HClockViewController.h"
+#import "HBaseViewController.h"
+#import "NavViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,8 +20,100 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    self.eventManager = [[EventManager alloc]init];
+    
+    [self.eventManager.eventStore requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
+        if (error == nil) {
+            // Store the returned granted value.
+            self.eventManager.eventsAccessGranted = granted;
+        }
+        else{
+            
+            NSLog(@"%@", [error localizedDescription]);
+        }
+    }];
+    
+    HBaseViewController *root = [[HBaseViewController alloc]init];
+    NavViewController *nav = [[NavViewController alloc]initWithRootViewController:root];
+    self.window.rootViewController = nav;
+    
+    
+    if ([application
+         respondsToSelector:@selector(registerUserNotificationSettings:)]) {
+        //注册推送, 用于iOS8以及iOS8之后的系统
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings
+                                                settingsForTypes:(UIUserNotificationTypeBadge |
+                                                                  UIUserNotificationTypeSound |
+                                                                  UIUserNotificationTypeAlert)
+                                                categories:nil];
+        [application registerUserNotificationSettings:settings];
+    } else {
+        //注册推送，用于iOS8之前的系统
+        UIRemoteNotificationType myTypes = UIRemoteNotificationTypeBadge |
+        UIRemoteNotificationTypeAlert |
+        UIRemoteNotificationTypeSound;
+        [application registerForRemoteNotificationTypes:myTypes];
+    }
+    
     return YES;
 }
+
+
+
+/**
+ * 注册用户通知设置
+ */
+- (void)application:(UIApplication *)application
+didRegisterUserNotificationSettings:
+(UIUserNotificationSettings *)notificationSettings {
+    // register to receive notifications
+    [application registerForRemoteNotifications];
+}
+
+/**
+ * 获取deviceToken
+ */
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+
+    
+}
+
+- (void)onlineConfigCallBack:(NSNotification *)note {
+
+}
+
+/**
+ * 远程通知
+ */
+- (void)application:(UIApplication *)application
+didReceiveRemoteNotification:(NSDictionary *)userInfo {
+
+}
+
+- (void)didReceiveMessageNotification:(NSNotification *)notification {
+    
+}
+
+
+- (void)application:(UIApplication *)application
+didReceiveLocalNotification:(UILocalNotification *)notification {
+    /**
+     * 统计推送打开率3
+     */
+    
+    //震动
+//    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+//    AudioServicesPlaySystemSound(1007);
+    
+    UIAlertView *alter = [[UIAlertView alloc]initWithTitle:@"起床" message:@"起床了" delegate:nil cancelButtonTitle:@"再睡一会儿" otherButtonTitles:@"好", nil];
+    [alter show];
+    
+}
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

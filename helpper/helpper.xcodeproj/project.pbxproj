@@ -8,14 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		848F4CEC3040E40874C6512F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D56B6F79195F4F273537727 /* libPods.a */; };
+		8B5F0DDD1CA14BA5002D3BDD /* AFAudioRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5F0DDA1CA14BA5002D3BDD /* AFAudioRouter.m */; };
+		8B5F0DDE1CA14BA5002D3BDD /* AFSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5F0DDC1CA14BA5002D3BDD /* AFSoundManager.m */; };
+		8B5F0DE01CA14E44002D3BDD /* guiz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8B5F0DDF1CA14E44002D3BDD /* guiz.mp3 */; };
+		8B5F0DE21CA1506F002D3BDD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B5F0DE11CA1506F002D3BDD /* AVFoundation.framework */; };
+		8B5F0DE41CA1507B002D3BDD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B5F0DE31CA1507B002D3BDD /* AudioToolbox.framework */; };
+		8B643C491CA23AD300E7A24E /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B643C471CA23AD300E7A24E /* EventKit.framework */; };
+		8B643C4A1CA23AD300E7A24E /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B643C481CA23AD300E7A24E /* EventKitUI.framework */; };
+		8B643C4D1CA2448E00E7A24E /* HSetClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B643C4C1CA2448E00E7A24E /* HSetClockViewController.m */; };
 		8B6ACA1E1C9FC41500CC052A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6ACA1D1C9FC41500CC052A /* main.m */; };
 		8B6ACA271C9FC41500CC052A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6ACA251C9FC41500CC052A /* Main.storyboard */; };
 		8B6ACA291C9FC41500CC052A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B6ACA281C9FC41500CC052A /* Assets.xcassets */; };
 		8B6ACA2C1C9FC41500CC052A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6ACA2A1C9FC41500CC052A /* LaunchScreen.storyboard */; };
 		8B6ACA371C9FC41500CC052A /* helpperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6ACA361C9FC41500CC052A /* helpperTests.m */; };
 		8B6ACA421C9FC41500CC052A /* helpperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6ACA411C9FC41500CC052A /* helpperUITests.m */; };
-		8B6ACA541C9FCCA300CC052A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6ACA531C9FCCA300CC052A /* AppDelegate.m */; };
-		8B6ACA571C9FCD0700CC052A /* HBaseViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6ACA561C9FCD0700CC052A /* HBaseViewViewController.m */; };
+		8B6ACA541C9FCCA300CC052A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		8B6ACA571C9FCD0700CC052A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		8B6ACA5F1C9FDFC400CC052A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6ACA5C1C9FDFC400CC052A /* AppDelegate.m */; };
+		8B6ACA601C9FDFC400CC052A /* HBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6ACA5E1C9FDFC400CC052A /* HBaseViewController.m */; };
+		8B6ACA671C9FE7B400CC052A /* HClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6ACA661C9FE7B400CC052A /* HClockViewController.m */; };
+		8B6ACA6A1C9FFB8F00CC052A /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6ACA691C9FFB8F00CC052A /* NavViewController.m */; };
+		8BC6BD7B1CA3EEFC00D76DF4 /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6BD7A1CA3EEFC00D76DF4 /* EventManager.m */; };
+		8BC6BD7E1CA3EF6D00D76DF4 /* HRemander.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6BD7D1CA3EF6D00D76DF4 /* HRemander.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +52,17 @@
 /* Begin PBXFileReference section */
 		531B38AFFEBA8AEB083F1C64 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		892EBA172E5594F7A6E78D9F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8B5F0DD91CA14BA5002D3BDD /* AFAudioRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAudioRouter.h; sourceTree = "<group>"; };
+		8B5F0DDA1CA14BA5002D3BDD /* AFAudioRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAudioRouter.m; sourceTree = "<group>"; };
+		8B5F0DDB1CA14BA5002D3BDD /* AFSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundManager.h; sourceTree = "<group>"; };
+		8B5F0DDC1CA14BA5002D3BDD /* AFSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundManager.m; sourceTree = "<group>"; };
+		8B5F0DDF1CA14E44002D3BDD /* guiz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = guiz.mp3; sourceTree = "<group>"; };
+		8B5F0DE11CA1506F002D3BDD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8B5F0DE31CA1507B002D3BDD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8B643C471CA23AD300E7A24E /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		8B643C481CA23AD300E7A24E /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		8B643C4B1CA2448E00E7A24E /* HSetClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSetClockViewController.h; sourceTree = "<group>"; };
+		8B643C4C1CA2448E00E7A24E /* HSetClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSetClockViewController.m; sourceTree = "<group>"; };
 		8B6ACA191C9FC41500CC052A /* helpper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helpper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6ACA1D1C9FC41500CC052A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B6ACA261C9FC41500CC052A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,10 +75,18 @@
 		8B6ACA3D1C9FC41500CC052A /* helpperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helpperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6ACA411C9FC41500CC052A /* helpperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = helpperUITests.m; sourceTree = "<group>"; };
 		8B6ACA431C9FC41500CC052A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B6ACA521C9FCCA300CC052A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8B6ACA531C9FCCA300CC052A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8B6ACA551C9FCD0700CC052A /* HBaseViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBaseViewViewController.h; sourceTree = "<group>"; };
-		8B6ACA561C9FCD0700CC052A /* HBaseViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBaseViewViewController.m; sourceTree = "<group>"; };
+		8B6ACA5B1C9FDFC400CC052A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8B6ACA5C1C9FDFC400CC052A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8B6ACA5D1C9FDFC400CC052A /* HBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBaseViewController.h; sourceTree = "<group>"; };
+		8B6ACA5E1C9FDFC400CC052A /* HBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBaseViewController.m; sourceTree = "<group>"; };
+		8B6ACA651C9FE7B400CC052A /* HClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HClockViewController.h; sourceTree = "<group>"; };
+		8B6ACA661C9FE7B400CC052A /* HClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HClockViewController.m; sourceTree = "<group>"; };
+		8B6ACA681C9FFB8F00CC052A /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
+		8B6ACA691C9FFB8F00CC052A /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
+		8BC6BD791CA3EEFC00D76DF4 /* EventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventManager.h; sourceTree = "<group>"; };
+		8BC6BD7A1CA3EEFC00D76DF4 /* EventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventManager.m; sourceTree = "<group>"; };
+		8BC6BD7C1CA3EF6D00D76DF4 /* HRemander.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRemander.h; sourceTree = "<group>"; };
+		8BC6BD7D1CA3EF6D00D76DF4 /* HRemander.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRemander.m; sourceTree = "<group>"; };
 		8D56B6F79195F4F273537727 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -62,6 +95,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B643C491CA23AD300E7A24E /* EventKit.framework in Frameworks */,
+				8B643C4A1CA23AD300E7A24E /* EventKitUI.framework in Frameworks */,
+				8B5F0DE41CA1507B002D3BDD /* AudioToolbox.framework in Frameworks */,
+				8B5F0DE21CA1506F002D3BDD /* AVFoundation.framework in Frameworks */,
 				848F4CEC3040E40874C6512F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +129,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8B5F0DD81CA14B96002D3BDD /* music */ = {
+			isa = PBXGroup;
+			children = (
+				8B5F0DD91CA14BA5002D3BDD /* AFAudioRouter.h */,
+				8B5F0DDA1CA14BA5002D3BDD /* AFAudioRouter.m */,
+				8B5F0DDB1CA14BA5002D3BDD /* AFSoundManager.h */,
+				8B5F0DDC1CA14BA5002D3BDD /* AFSoundManager.m */,
+			);
+			path = music;
+			sourceTree = "<group>";
+		};
 		8B6ACA101C9FC41500CC052A = {
 			isa = PBXGroup;
 			children = (
@@ -117,13 +165,11 @@
 		8B6ACA1B1C9FC41500CC052A /* helpper */ = {
 			isa = PBXGroup;
 			children = (
-				8B6ACA4F1C9FCBFA00CC052A /* controllers */,
-				8B6ACA501C9FCBFA00CC052A /* public */,
-				8B6ACA511C9FCBFA00CC052A /* root */,
-				8B6ACA251C9FC41500CC052A /* Main.storyboard */,
-				8B6ACA281C9FC41500CC052A /* Assets.xcassets */,
-				8B6ACA2A1C9FC41500CC052A /* LaunchScreen.storyboard */,
-				8B6ACA2D1C9FC41500CC052A /* Info.plist */,
+				8B5F0DDF1CA14E44002D3BDD /* guiz.mp3 */,
+				8B5F0DD81CA14B96002D3BDD /* music */,
+				8B6ACA581C9FDFC400CC052A /* controllers */,
+				8B6ACA591C9FDFC400CC052A /* public */,
+				8B6ACA5A1C9FDFC400CC052A /* root */,
 				8B6ACA1C1C9FC41500CC052A /* Supporting Files */,
 			);
 			path = helpper;
@@ -132,7 +178,11 @@
 		8B6ACA1C1C9FC41500CC052A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8B6ACA281C9FC41500CC052A /* Assets.xcassets */,
+				8B6ACA2A1C9FC41500CC052A /* LaunchScreen.storyboard */,
+				8B6ACA251C9FC41500CC052A /* Main.storyboard */,
 				8B6ACA1D1C9FC41500CC052A /* main.m */,
+				8B6ACA2D1C9FC41500CC052A /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -155,34 +205,56 @@
 			path = helpperUITests;
 			sourceTree = "<group>";
 		};
-		8B6ACA4F1C9FCBFA00CC052A /* controllers */ = {
+		8B6ACA581C9FDFC400CC052A /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8B6ACA641C9FE7B400CC052A /* Clock */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
 		};
-		8B6ACA501C9FCBFA00CC052A /* public */ = {
+		8B6ACA591C9FDFC400CC052A /* public */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = public;
 			sourceTree = "<group>";
 		};
-		8B6ACA511C9FCBFA00CC052A /* root */ = {
+		8B6ACA5A1C9FDFC400CC052A /* root */ = {
 			isa = PBXGroup;
 			children = (
-				8B6ACA521C9FCCA300CC052A /* AppDelegate.h */,
-				8B6ACA531C9FCCA300CC052A /* AppDelegate.m */,
-				8B6ACA551C9FCD0700CC052A /* HBaseViewViewController.h */,
-				8B6ACA561C9FCD0700CC052A /* HBaseViewViewController.m */,
+				8B6ACA5B1C9FDFC400CC052A /* AppDelegate.h */,
+				8B6ACA5C1C9FDFC400CC052A /* AppDelegate.m */,
+				8B6ACA5D1C9FDFC400CC052A /* HBaseViewController.h */,
+				8B6ACA5E1C9FDFC400CC052A /* HBaseViewController.m */,
+				8B6ACA681C9FFB8F00CC052A /* NavViewController.h */,
+				8B6ACA691C9FFB8F00CC052A /* NavViewController.m */,
 			);
 			path = root;
+			sourceTree = "<group>";
+		};
+		8B6ACA641C9FE7B400CC052A /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				8BC6BD7C1CA3EF6D00D76DF4 /* HRemander.h */,
+				8BC6BD7D1CA3EF6D00D76DF4 /* HRemander.m */,
+				8BC6BD791CA3EEFC00D76DF4 /* EventManager.h */,
+				8BC6BD7A1CA3EEFC00D76DF4 /* EventManager.m */,
+				8B6ACA651C9FE7B400CC052A /* HClockViewController.h */,
+				8B6ACA661C9FE7B400CC052A /* HClockViewController.m */,
+				8B643C4B1CA2448E00E7A24E /* HSetClockViewController.h */,
+				8B643C4C1CA2448E00E7A24E /* HSetClockViewController.m */,
+			);
+			path = Clock;
 			sourceTree = "<group>";
 		};
 		E64F5E5685A7065426D206D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B643C471CA23AD300E7A24E /* EventKit.framework */,
+				8B643C481CA23AD300E7A24E /* EventKitUI.framework */,
+				8B5F0DE31CA1507B002D3BDD /* AudioToolbox.framework */,
+				8B5F0DE11CA1506F002D3BDD /* AVFoundation.framework */,
 				8D56B6F79195F4F273537727 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -294,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B6ACA2C1C9FC41500CC052A /* LaunchScreen.storyboard in Resources */,
+				8B5F0DE01CA14E44002D3BDD /* guiz.mp3 in Resources */,
 				8B6ACA291C9FC41500CC052A /* Assets.xcassets in Resources */,
 				8B6ACA271C9FC41500CC052A /* Main.storyboard in Resources */,
 			);
@@ -353,9 +426,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B6ACA541C9FCCA300CC052A /* AppDelegate.m in Sources */,
+				8B6ACA5F1C9FDFC400CC052A /* AppDelegate.m in Sources */,
+				8B6ACA541C9FCCA300CC052A /* (null) in Sources */,
+				8B6ACA671C9FE7B400CC052A /* HClockViewController.m in Sources */,
+				8B643C4D1CA2448E00E7A24E /* HSetClockViewController.m in Sources */,
+				8BC6BD7E1CA3EF6D00D76DF4 /* HRemander.m in Sources */,
 				8B6ACA1E1C9FC41500CC052A /* main.m in Sources */,
-				8B6ACA571C9FCD0700CC052A /* HBaseViewViewController.m in Sources */,
+				8B5F0DDD1CA14BA5002D3BDD /* AFAudioRouter.m in Sources */,
+				8B5F0DDE1CA14BA5002D3BDD /* AFSoundManager.m in Sources */,
+				8BC6BD7B1CA3EEFC00D76DF4 /* EventManager.m in Sources */,
+				8B6ACA571C9FCD0700CC052A /* (null) in Sources */,
+				8B6ACA601C9FDFC400CC052A /* HBaseViewController.m in Sources */,
+				8B6ACA6A1C9FFB8F00CC052A /* NavViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,9 +580,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = helpper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.helpper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -510,9 +594,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = helpper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.helpper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
