@@ -9,10 +9,13 @@
 #import "HSetClockViewController.h"
 #import <EventKit/EventKit.h>
 #import <EventKitUI/EventKitUI.h>
+#import "AppDelegate.h"
 
 @interface HSetClockViewController ()<EKEventEditViewDelegate>
 
-@property (nonatomic,strong) EKEventStore *eventStore;
+//@property (nonatomic,strong) EKEventStore *eventStore;
+
+@property (nonatomic,weak) AppDelegate *appdelegate;
 
 @end
 
@@ -27,16 +30,73 @@
     
 //    self.eventStore  = [EKEventStore allocWithZone:<#(struct _NSZone *)#>];
     
+    [self configer];
+    
+    self.appdelegate = [UIApplication sharedApplication].delegate;
     
 }
 
 - (void)configer{
     
-//    EKEventEditViewController *editVC = [[EKEventEditViewController alloc]init];
-//    
-////    editVC.eventStore = self
-//    editVC.editViewDelegate = self;
-//    [self presentViewController:editVC animated:YES completion:^{}];
+//    self.appdelegate.eventManager.eventStore = [[EKEventStore alloc] init];
+    
+    NSDate *now = [NSDate date];
+    
+    //事件
+    [self.appdelegate.eventManager.eventStore requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
+        if (granted) {
+            EKAlarm *alarm = [EKAlarm alarmWithAbsoluteDate:[now dateByAddingTimeInterval:30]];//30秒
+            
+            EKEvent *event = [EKEvent eventWithEventStore:self.appdelegate.eventManager.eventStore];
+            event.title = @"This is a new event";
+            event.startDate = now;
+            event.endDate = [now dateByAddingTimeInterval:30];
+            [event setAllDay:YES];
+            [event addAlarm:alarm];
+            [event setCalendar:[self.appdelegate.eventManager.eventStore defaultCalendarForNewEvents]];
+            [self.appdelegate.eventManager.eventStore saveEvent:event span:EKSpanThisEvent commit:YES error:nil];
+            
+            NSError *err = nil;
+            if([self.appdelegate.eventManager.eventStore saveEvent:event span:EKSpanThisEvent commit:YES error:&err]){
+                NSLog(@"saved!");
+            }else{
+                NSLog(@"%@",err);
+            }
+        }else{
+            NSLog(@"%@",error);
+        }
+    }];
+    
+    //提醒
+    [self.appdelegate.eventManager.eventStore requestAccessToEntityType:EKEntityTypeReminder completion:^(BOOL granted, NSError *error) {
+        if (granted) {
+            EKAlarm *alarm = [EKAlarm alarmWithAbsoluteDate:[now dateByAddingTimeInterval:30]];
+            
+            EKReminder *reminder = [EKReminder reminderWithEventStore:self.appdelegate.eventManager.eventStore];
+            reminder.title = @"This is a reminder";
+            NSCalendar *cal = [NSCalendar currentCalendar];
+            [cal setTimeZone:[NSTimeZone systemTimeZone]];
+            NSInteger flags = NSYearCalendarUnit | NSMonthCalendarUnit |
+            NSDayCalendarUnit |NSHourCalendarUnit | NSMinuteCalendarUnit |
+            NSSecondCalendarUnit;
+            
+            reminder.startDateComponents = [cal components:flags fromDate:[now dateByAddingTimeInterval:30]];//开始时间
+            reminder.dueDateComponents = [cal components:flags fromDate:[now dateByAddingTimeInterval:30]]; //结束时间
+            reminder.completionDate = [now dateByAddingTimeInterval:30];
+            [reminder setCalendar:[self.appdelegate.eventManager.eventStore defaultCalendarForNewReminders]];
+            reminder.priority = 1;//优先级
+            [reminder addAlarm:alarm];
+            
+            NSError *err = nil;
+            if([self.appdelegate.eventManager.eventStore saveReminder:reminder commit:YES error:&err]){
+                NSLog(@"saved!");
+            }else{
+                NSLog(@"%@",err);
+            }
+        }else{
+            NSLog(@"%@",error);
+        }
+    }];
 }
 
 - (void)eventEditViewController:(EKEventEditViewController *)controller

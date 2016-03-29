@@ -15,5 +15,7 @@
 
 @property (nonatomic, strong) EventManager *eventManager;
 
++(AppDelegate *)shareDelegate;
+
 @end
 
